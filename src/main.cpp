@@ -48,9 +48,12 @@ void sendResponse() {
   digitalWrite(RE_PIN, HIGH);
   digitalWrite(DE_PIN, HIGH);
 
+  delay(10);
+
   rs485Serial.write(response, 9);
 
-  delay(20);
+  delay(10);
+
 
   digitalWrite(RE_PIN, LOW);
   digitalWrite(DE_PIN, LOW);
